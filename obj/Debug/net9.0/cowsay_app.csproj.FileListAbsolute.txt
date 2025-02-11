@@ -1,0 +1,14 @@
+/home/keanu-laptop/projects/cowsay_app/bin/Debug/net9.0/cowsay_app
+/home/keanu-laptop/projects/cowsay_app/bin/Debug/net9.0/cowsay_app.deps.json
+/home/keanu-laptop/projects/cowsay_app/bin/Debug/net9.0/cowsay_app.runtimeconfig.json
+/home/keanu-laptop/projects/cowsay_app/bin/Debug/net9.0/cowsay_app.dll
+/home/keanu-laptop/projects/cowsay_app/bin/Debug/net9.0/cowsay_app.pdb
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.GeneratedMSBuildEditorConfig.editorconfig
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.AssemblyInfoInputs.cache
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.AssemblyInfo.cs
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.csproj.CoreCompileInputs.cache
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.dll
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/refint/cowsay_app.dll
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.pdb
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/cowsay_app.genruntimeconfig.cache
+/home/keanu-laptop/projects/cowsay_app/obj/Debug/net9.0/ref/cowsay_app.dll
