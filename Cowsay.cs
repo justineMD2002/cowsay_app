@@ -1,22 +1,10 @@
-using System;
 using System.Diagnostics;
 
 namespace CowsayApp;
 
 class Cowsay
 {
-
-    
-    public Cowsay(){}
-
-    public string Message { get; set; }
-
-    public Cowsay(string? message)
-    {
-        Message = string.IsNullOrWhiteSpace(message) ? "Moo! (You said nothing)" : message;
-    }
-
-    public string GetCowsayOutput()
+    public static string GetCowsayOutput(string userInput)
     {
         var psi = new ProcessStartInfo("cowsay")
         {
@@ -27,19 +15,14 @@ class Cowsay
 
         try
         {
-            using var process = Process.Start(psi);
-            if (process == null)
-            {
-                throw new InvalidOperationException("Error: Failed to start cowsay process.");
-            }
-
+            using var process = Process.Start(psi) ?? throw new InvalidOperationException("Error: Failed to start cowsay process.");
             using (var writer = process.StandardInput)
             {
                 if (!writer.BaseStream.CanWrite)
                 {
                     throw new InvalidOperationException("Error: Unable to write to cowsay process.");
                 }
-                writer.WriteLine(Message);
+                writer.WriteLine(userInput);
             }
 
             string output = process.StandardOutput.ReadToEnd();
