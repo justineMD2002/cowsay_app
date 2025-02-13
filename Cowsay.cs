@@ -6,6 +6,11 @@ class Cowsay
 {
     public static string GetCowsayOutput(string userInput)
     {
+        if (string.IsNullOrWhiteSpace(userInput))
+        {
+            return "Error: No input provided.";
+        }
+        
         var psi = new ProcessStartInfo("cowsay")
         {
             RedirectStandardInput = true,
