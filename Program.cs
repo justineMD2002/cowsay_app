@@ -2,9 +2,10 @@
 
 bool keepRunning = true;
 
-Cowsay cowsay = new("");
+Cowsay cowsay = new();
 
-while (keepRunning) {   
+while (keepRunning)
+{
     Console.Write("Tell me what you want to say: ");
     string userInput = Console.ReadLine() ?? "";
 
@@ -15,6 +16,7 @@ while (keepRunning) {
     string response = Console.ReadLine()?.Trim().ToLower() ?? "no";
 
     keepRunning = response == "yes" || response == "y";
-}   
+}
 
 Console.WriteLine("Goodbye! 🐄");
+    
